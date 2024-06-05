@@ -1,0 +1,82 @@
+/* src/components/About.css */
+
+body {
+  background-color: black;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; /* Using Montserrat as an example */
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.about {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between; /* Ensure space between elements */
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+.portrait img {
+  width: 200px; /* Adjust the width as needed */
+  height: auto;
+  border-radius: 50%; /* Gives a circular shape for the portrait */
+  margin-bottom: 20px;
+}
+
+.biography {
+  flex-grow: 1; /* This ensures the biography section takes up remaining space */
+  margin-bottom: 20px;
+}
+
+.biography h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.biography p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.follow-us {
+  margin-top: 20px;
+}
+
+.follow-us .social-media-links {
+  margin-top: 20px;
+}
+
+.social-media-links a {
+  margin-right: 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.social-media-links a:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Add this to initialize AOS */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: none;
+}
